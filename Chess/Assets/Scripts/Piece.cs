@@ -14,16 +14,16 @@ public class Piece : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log($"Piece {this.name} clicked");
+        //Debug.Log($"Piece {this.name} clicked");
     }
 
     void OnMouseEnter()
     {
-
+        //pieceRenderer.transform.position += new Vector3(0, 0.2f, 0);
     }
 
     void OnMouseExit()
     {
-
+        //pieceRenderer.transform.position -= new Vector3(0, 0.2f, 0);
     }
 }

@@ -49,6 +49,7 @@ public class GridManager : MonoBehaviour
 
                 spawnedPiece.Init(true);
 
+                GetTileAtPosition(new Vector2(i, j)).occupant = spawnedPiece;
                 //tiles[new Vector2(x, z)] = spawnedTile;
             }
         }
@@ -63,6 +64,7 @@ public class GridManager : MonoBehaviour
 
                 spawnedPiece.Init(false);
 
+                GetTileAtPosition(new Vector2(i, z_size - j - 1)).occupant = spawnedPiece;
                 //tiles[new Vector2(x, z)] = spawnedTile;
             }
         }
